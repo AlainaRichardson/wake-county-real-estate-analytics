@@ -42,9 +42,15 @@ This workflow was developed using a structured data science pipeline, utilizing 
 3. **Exploratory Data Analysis (EDA):** Generated multi-variable correlation matrix heatmaps to isolate top-tier predictive elements.
 4. **Model Architecture:** Trained and cross-validated multiple regression frameworks—ranging from baseline Linear Regression to ensemble methods like XGBoost and Random Forest.
 
-### 📈 Key Findings & Insights
+## 📈 Key Findings & Insights
 
-* **Top Evaluation Driver:** Total living area (square footage) exhibited a 0.78 Pearson correlation coefficient with transaction prices, proving to be the primary metric of baseline valuation.
-* **The Location Premium:** Neighborhoods within the Cary, Apex, and North Raleigh sectors commanded an average of 24% higher price-per-square-foot premium relative to baseline county numbers.
-* **Predictive Accuracy:** The final optimized machine learning model achieved an R² score of 7.4%, indicating that the framework captures the vast majority of historical pricing variance.
+### 1. Feature Correlations
+This heatmap visualizes how closely interconnected different house features are with the ultimate transaction value.
+<br>
+<img src="images/feature_correlation_matrix.png" width="600" alt="Feature Correlation Matrix Heatmap">
+
+### 2. Living Area vs. Market Value
+Total living area (square footage) functions as the anchor driver of property valuations, displaying a highly linear trend line.
+<br>
+<img src="images/living_area_vs_price.png" width="600" alt="Square Footage vs Sale Price Scatter Plot">
 
